@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './styles/galery.css';
+import '../styles/galery.css';
 import FsLightbox from 'fslightbox-react';
 
 const Galery = () => {
