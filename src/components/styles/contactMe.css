@@ -1,0 +1,130 @@
+.contactMe-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 4.5em;
+   margin-left: 1.5em;
+   margin-right: 1.5em;
+}
+
+.title-contactMe {
+   margin-top: 2em;
+   font-size: 30px;
+   color: #393838;
+   margin-bottom: 1.6em;
+}
+
+.form-box {
+   background-color: #f6f6f6;
+   width: 100%;
+   padding: 1.2em;
+   display: flex;
+   flex-direction: column;
+   border-radius: 8px;
+}
+
+.form-box input {
+   border: none;
+   margin-bottom: 1.3em;
+   padding: 17px;
+}
+
+.form-box textarea {
+   border: none;
+   margin-bottom: 1.3em;
+   height: 80px;
+   padding: 17px;
+   font-family: sans-serif;
+}
+
+.btn-form {
+   background-color: #00796b;
+   color: white;
+   border-radius: 1.8em;
+   font-size: 14px;
+   font-weight: 700;
+   margin-bottom: 1.3em;
+}
+
+.infomation-contactMe-container {
+
+   margin-top: 65px;
+   /* margin-bottom: 5rem; */
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+
+}
+
+.form-and-informationContainer {
+   margin-top: 2em;
+
+   width: 100%;
+   margin-bottom: 5em;
+}
+
+.information-contactMe-box {
+   display: flex;
+   flex-direction: row;
+   margin-left: 0.3em;
+   gap: 30px;
+}
+
+.title-general-information-contactMe {
+    color: #4B5563;
+    font-weight: 630;
+    margin-bottom: 1em;
+}
+
+.icon-box {
+    color: #00796b;
+    font-size: 26px;
+}
+
+.icon-box i {
+    margin-top: 0.4em;
+}
+
+
+.text-general-box {
+   display: flex;
+   flex-direction: column;
+}
+
+.span-general-information-contactMe {
+    color: #737373;
+    font-weight: 450;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 850px) {
+.form-and-informationContainer {
+   display: flex;
+   gap: 4em;
+}
+
+
+.form-box {
+   width: 50%;
+ }
+
+ .infomation-contactMe-container {
+   margin-top: 0px;
+   gap: 4em;
+
+}
+
+#miId {
+   height: 400px;
+}
+
+}
+
+@media screen and (min-width: 1000px) {
+   .contactMe-container {
+      padding-top: 5.3em;
+
+   }
+   
+}
+

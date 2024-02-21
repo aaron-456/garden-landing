@@ -1,0 +1,30 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ul {
+   padding-left: 0rem;
+}
+
+img {
+   width: 100%;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+}
