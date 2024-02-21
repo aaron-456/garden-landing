@@ -26,10 +26,12 @@ const Header = () => {
    //funcion para dirijir a cada seccion de la pagina al usuario
    const scrollToSection = (sectionId) => {
       const section = document.getElementById(sectionId);
-      console.log(`Desplazándose a la sección: ${sectionId}`);
       if (section) {
          section.scrollIntoView({ behavior: 'smooth' });
-         handleChangeOpen();
+
+         if (window.innerWidth <= 850) {
+            handleChangeOpen();
+         }
       }
    };
 

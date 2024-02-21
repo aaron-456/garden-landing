@@ -5,7 +5,6 @@
 }
 
 .titles-box {
-   /* padding-top: 4.5em; */
    padding-bottom: 18px;
    width: max-content;
    display: flex;
@@ -29,7 +28,7 @@
 
 @media screen and (min-width: 850px) {
    .images-box {
-      grid-template-columns: repeat(4, 2fr); /* Dos columnas de tamaño igual */
+      grid-template-columns: repeat(4, 2fr);
    }
 }
 
