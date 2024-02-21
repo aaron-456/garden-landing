@@ -6,13 +6,13 @@ const Galery = () => {
    const [toggler, setToggler] = useState(false);
    const [slide, setSlide] = useState(1);
    const images = [
-      '/public/jardineria.jpg',
-      '/public/ssasassss.jpg',
-      '/public/jardineria.jpg',
-      '/public/ssasassss.jpg',
-      '/public/jardineria.jpg',
-      '/public/ssasassss.jpg',
-      '/public/jardineria.jpg',
+      '/jardineria.jpg',
+      '/ssasassss.jpg',
+      '/jardineria.jpg',
+      '/ssasassss.jpg',
+      '/jardineria.jpg',
+      '/ssasassss.jpg',
+      '/jardineria.jpg',
    ];
 
    return (
