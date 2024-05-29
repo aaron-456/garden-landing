@@ -38,12 +38,22 @@ const Header = () => {
    return (
       <header className='header-container'>
          <div className='img-box'>
-            <img className='img-logo' src='logo-verdegal.PNG' alt='' />
+            <img
+               className='img-logo'
+               src='logo-verdegal.png'
+               alt='logo not foud'
+            />
          </div>
 
-         <div className='menu-icon-box' onClick={handleChangeOpen}>
-            <i className='fa-solid fa-bars'></i>
+         <div className='buttons-box-header'>
+            <button className='btn-contact-home'>
+               <p className='span-btn-contact-home'>Contacto</p>
+            </button>
+            <div className='menu-icon-box' onClick={handleChangeOpen}>
+               <i className='fa-solid fa-bars'></i>
+            </div>
          </div>
+
          <div className={`main-tutu ${isOpen ? 'visible-na' : ''}`}>
             <nav className={`main-nav ${isOpen ? 'visible-nav' : ''}`}>
                <div className='logo-and-icon-box'>

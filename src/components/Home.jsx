@@ -2,21 +2,29 @@ import './styles/home.css';
 const Home = () => {
    return (
       <section className='home-container ' id='home'>
-         <div className='elements-box kenburns-top'>
-            <div className='background-image'></div>
-            <div className='content-box'>
-               <h1 className='title-home slide-in-left'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-               </h1>
-               <h3 className='subtitle-home slide-in-left'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, neque.
-               </h3>
-               <button className='button-whatsapp slide-in-left'>
-                  <span className='span-whatsapp'>Whatsapp</span>
+         <div className='content-box-home'>
+            <h1 className='title-home slide-in-left'>
+               Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+            <h3 className='subtitle-home slide-in-left'>
+               En Verdegal ofrecemos una amplia gama de servicios de jardinería
+               para que su espacio exterior luzca hermoso. Desde cortar el
+               césped hasta el paisajismo, nuestro equipo de profesionales se
+               dedica a brindar un servicio de primer nivel y crear jardines
+               impresionantes.
+            </h3>
+            <div className='buttons-home-box'>
+               <button className='btn-schedule-appointment slide-in-left'>
+                  AGENDAR CITA
+               </button>
+               <button className='btn-whatsapp-home'>
                   <i className='fa-brands fa-whatsapp'></i>
+                  <span className='span-whatsapp-home'>Whatsapp</span>
                </button>
             </div>
+         </div>
+         <div className='image-box-home'>
+            <img src='./img-home.gif' alt='img not foud' />
          </div>
       </section>
    );

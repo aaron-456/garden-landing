@@ -12,6 +12,23 @@
    font-weight: 600;
 }
 
+.subtitle-aboutUS {
+   opacity: 0;
+   transform: translateY(50px);
+   animation: fadeInUp 2s ease-out forwards;;
+}
+
+@keyframes fadeInUp {
+   from { /* Cambia 'to' a 'from' y ajusta la posición inicial */
+       opacity: 0;
+       transform: translateY(50px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
 .title-aboutUS {
    margin-top: 0.4em;
    font-size: 30px;
