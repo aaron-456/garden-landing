@@ -1,25 +1,70 @@
 .aboutUS-container {
    padding-top: 4.2em;
-   /* padding-bottom: 4.5em; */
-   margin-left: 1.5em;
-   margin-right: 1.5em;
-   
+   padding-bottom: 4.2em;
+   padding-left: 1.5em;
+   padding-right: 1.5em;
+   background-color: #00473e;
 }
 
-.subtitle-aboutUS {
-   color: #05685d;
-   font-size: 17px;
-   font-weight: 600;
+.box-years-of-experience {
+   color: #faae2b;
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   margin-bottom: 10px;
 }
 
+.icon-tree-aboutUS {
+   font-size: 26px;
+}
+
+.span-years-of-experience {
+   font-size: 13px;
+   font-weight: 700;
+}
+
+
 .subtitle-aboutUS {
+   font-size: 25px;
+   font-weight: 700;
+   color: #ffffff ;
+   line-height: 1.5;
+}
+
+.paragraph-aboutUs {
+   color: #ffffff;
+   font-size: 14px;
+   font-weight: 400;
+   margin-top: 0.9em;
+   line-height: 1.4;
+}
+
+.characteristics-aboutUs {
+   color: #faae2b;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+.characteristics-box-aboutUs {
+   display: flex;
+   flex-direction: row;
+   gap: 15px;
+   margin-top: 1.7em;
+}
+
+.span-characteristics-aboutUs {
+   font-size: 14px;
+}
+
+/* .subtitle-aboutUS {
    opacity: 0;
    transform: translateY(50px);
    animation: fadeInUp 2s ease-out forwards;;
-}
+} */
 
-@keyframes fadeInUp {
-   from { /* Cambia 'to' a 'from' y ajusta la posición inicial */
+/* @keyframes fadeInUp {
+   from {
        opacity: 0;
        transform: translateY(50px);
    }
@@ -27,37 +72,18 @@
        opacity: 1;
        transform: translateY(0);
    }
-}
+} */
 
-.title-aboutUS {
-   margin-top: 0.4em;
-   font-size: 30px;
-   color: #393838;
-   margin-bottom: 0.5em;
-}
-
-.content-aboutUs {
-   color: #7a7a7a;
-   line-height: 23px;
-}
-
-.img-aboutUs-box {
+.image-box-aboutUS {
    margin-top: 3em;
-   display: flex;
-   justify-content: center;
 }
 
-.img-aboutUs {
-   max-width: 550px;
+.image-box-aboutUS img {
    object-fit: cover;
-   border-radius: 5px;
-   height: 260px;
+   height: 310px;
 }
-
 
 @media screen and (min-width: 850px) {
-
-
    .title-aboutUS {
       font-size: 37px;
    }
@@ -71,11 +97,10 @@
    }
 }
 
-@media screen and (min-width: 1000px) { 
+@media screen and (min-width: 1000px) {
    .aboutUS-container {
       padding-top: 5.3em;
       padding-bottom: 5.3em;
-      /* height: 400px; */
       display: flex;
       flex-direction: row-reverse;
       gap: 4em;
@@ -99,4 +124,3 @@
       justify-content: center;
    }
 }
-

@@ -1,48 +1,41 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './styles/galery.css';
-import FsLightbox from 'fslightbox-react';
 
 const Galery = () => {
-   const [toggler, setToggler] = useState(false);
-   const [slide, setSlide] = useState(1);
-   const images = [
-      '/jardineria.jpg',
-      '/ssasassss.jpg',
-      '/jardineria.jpg',
-      '/ssasassss.jpg',
-      '/jardineria.jpg',
-      '/ssasassss.jpg',
-      '/jardineria.jpg',
-   ];
-
    return (
-      <section className='galery-container'>
-         <div className='titles-box'>
-            <span className='subtitle-aboutUS'>Lorem ipsum dolor sit.</span>
-            <h3 className='title-aboutUS'>Galeria</h3>
+      <section className='testimony-container'>
+         <div className='additional-text-box-aboutUS'>
+            <span className='additional-text-aboutUS'>Servicios</span>
          </div>
 
-         <FsLightbox toggler={toggler} sources={images} slide={slide} />
+         <h3 className='subtitle-service'>
+            Embellece tu Espacio Exterior con Nuestros Servicios de Jardinería
+         </h3>
 
-         <div className='images-box'>
-            {images.map((image, index) => (
-               <img
-                  key={index}
-                  src={image}
-                  alt='img not found'
-                  onClick={() => {
-                     setSlide(index + 1);
-                     setToggler(!toggler);
-                  }}
-                  className={
-                     index === 0
-                        ? 'first-image'
-                        : index === 1
-                          ? 'second-image'
-                          : ''
-                  }
-               />
-            ))}
+         <div className='testimony-box'>
+            <div className='stars-box'>
+               <i className='bx bxs-star'></i>
+               <i className='bx bxs-star'></i>
+               <i className='bx bxs-star'></i>
+               <i className='bx bxs-star'></i>
+               <i className='bx bxs-star'></i>
+            </div>
+            <p>
+               Verdegal transformó mi césped cubierto de maleza en un hermoso
+               oasis. Su atención al detalle y experiencia son incomparables.
+            </p>
+
+            <div>
+               <img src='./user.png' alt='img not found' />
+               <span>Aaron Mejia</span>
+               <span>Propietario de casa, jardines verdes</span>
+               <img src='./logo-verdegal.png' alt='img not found' />
+            </div>
+
+            <div>
+               <div></div>
+               <div></div>
+            </div>
          </div>
       </section>
    );

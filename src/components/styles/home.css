@@ -2,6 +2,7 @@
    margin-top: 7em;
    margin-left: 1.5em;
    margin-right: 1.5em;
+   margin-bottom: 4em;
 }
 
 .title-home {
@@ -15,6 +16,7 @@
    font-size: 15px;
    margin-top: 1.1em;
    font-weight: 500;
+   line-height: 1.4;
 }
 
 .buttons-home-box {
