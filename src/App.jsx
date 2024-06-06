@@ -3,8 +3,9 @@ import AboutUs from './components/AboutUs';
 import Header from './components/Header';
 import Services from './components/Services';
 import Home from './components/Home';
-import Galery from './components/Galery';
 import ContactMe from './components/ContactMe';
+import Testimonial from './components/Testimonial';
+import ScheduleAppointment from './components/ScheduleAppointment';
 
 function App() {
    return (
@@ -13,7 +14,8 @@ function App() {
          <Home />
          <AboutUs />
          <Services />
-         <Galery />
+         <Testimonial />
+         <ScheduleAppointment />
          <ContactMe />
       </>
    );

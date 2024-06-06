@@ -23,26 +23,47 @@ const ContactMe = () => {
    };
 
    return (
-      <section className='contactMe-container' id='contactme'>
-         <div className='titles-box'>
-            <span className='subtitle-aboutUS'>Lorem ipsum dolor sit.</span>
-            <h3 className='title-aboutUS'>Contacto y Ubicacion</h3>
-         </div>
+      <section className='contact-container' id='contactme'>
+         <div className='contact-box'>
+            <h3 className='subtitle-contact'>
+               Ponerse en{' '}
+               <span className='highlighted-word-contact'>contacto</span>{' '}
+            </h3>
 
-         <div className='form-and-informationContainer'>
             <form className='form-box' ref={form} onSubmit={sendEmail}>
-               <input type='text' name='user_name' placeholder='Nombre' />
+               <span className='paragraph-form-contact'>Nombre Completo </span>
                <input
-                  type='tel'
-                  name='phone'
-                  pattern='[0-9]{10}'
-                  placeholder='Teléfono'
-               ></input>
-               <input type='email' name='user_email' placeholder='Email' />
-               <input type='text' name='user_affair' placeholder='Asunto' />
-               <textarea name='message' placeholder='Message' />
+                  className='input-form-contact'
+                  type='text'
+                  name='user_name'
+               />
+               <span className='paragraph-form-contact'>
+                  Correo electronico{' '}
+               </span>
+               <input
+                  className='input-form-contact'
+                  type='email'
+                  name='user_email'
+               />
+               <span className='paragraph-form-contact'>Mensaje</span>
+               <textarea name='message' placeholder='Ingrese su mensaje...' />
                <input className='btn-form' type='submit' value='Enviar' />
             </form>
+
+            <iframe
+               id='miId'
+               title='Google Maps'
+               src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1410.611426454725!2d-78.49145668967321!3d-0.10499660351837069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1707458760690!5m2!1ses!2sec'
+               width='100%'
+               height='250'
+               style={{
+                  border: 0,
+                  backgroundColor: '#D1D5DB',
+               }}
+               allowFullScreen
+               loading='lazy'
+               referrerPolicy='no-referrer-when-downgrade'
+            ></iframe>
 
             <div className='infomation-contactMe-container'>
                <div className='information-contactMe-box'>
@@ -97,24 +118,6 @@ const ContactMe = () => {
                </div>
             </div>
          </div>
-
-         <iframe
-            id='miId'
-            title='Google Maps'
-            src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1410.611426454725!2d-78.49145668967321!3d-0.10499660351837069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1707458760690!5m2!1ses!2sec'
-            width='100%'
-            height='250'
-            style={{
-               border: 0,
-               borderRadius: '6px',
-               padding: '18px',
-               backgroundColor: '#D1D5DB',
-               marginBottom: '4.5em',
-            }}
-            allowFullScreen
-            loading='lazy'
-            referrerPolicy='no-referrer-when-downgrade'
-         ></iframe>
       </section>
    );
 };

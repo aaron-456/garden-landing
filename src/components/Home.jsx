@@ -4,7 +4,8 @@ const Home = () => {
       <section className='home-container ' id='home'>
          <div className='content-box-home'>
             <h1 className='title-home slide-in-left'>
-               Lorem ipsum dolor sit amet consectetur adipisicing.
+               Embellece tu Espacio Exterior con Nuestros Servicios de
+               Jardinería
             </h1>
             <h3 className='subtitle-home slide-in-left'>
                En Verdegal ofrecemos una amplia gama de servicios de jardinería
